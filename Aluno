@@ -1,0 +1,20 @@
+Algoritmo  "Aluno"
+var  PrimeiraNota, SegundaNota, NotaFinal, NotaExame: Real
+inicio
+   EscrevaL("Digite a sua nota N1: ")
+   Leia (PrimeiraNota)
+   EscrevaL("Digite a sua nota N2: ")
+   Leia (SegundaNota)
+   NotaFinal <- (PrimeiraNota + SegundaNota) /2
+   EscrevaL ("A sua nota final é de : ",NotaFinal:5:1)
+   Se (NotaFinal >= 7) Entao
+      EscrevaL ("Parabéns, você foi aprovado!! ", NotaFinal)
+   Senao
+      se(NotaFinal>=5 ) e (NotaFinal <7) Entao
+         EscrevaL ("Deverá realizar o exame final", NotaFinal)
+      Senao
+         EscrevaL ("Aluno reprovado!!")
+      FimSe
+   FimSe
+
+fimalgoritmo
