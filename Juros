@@ -1,0 +1,14 @@
+algoritmo "Juros_20%"
+var
+   emprestimo, juros,parcelas, total, vezes: Real
+inicio
+      Escreva ("Qual o valor que você deseja para o empréstimo")
+      Leia (emprestimo)
+      juros <- (emprestimo *20)/100
+      total <- juros + emprestimo
+      Escreva ("Quantas parcelas deseja fazer?")
+      Leia (vezes)
+      parcelas <- total/vezes
+      Escreval ("O imposto será de US$", juros:5:2)
+      Escreval ("O empréstimo ficará de RS$ ", total:5:2 ," em ",vezes, "X DE", parcelas:5:2)
+fimalgoritmo
