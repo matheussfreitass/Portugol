@@ -1,0 +1,16 @@
+Algoritmo "CNH"
+var
+   data_nasc, ano_atual, idade: Real
+inicio
+      EscrevaL("Insira sua data de nascimento: ")
+      Leia (data_nasc)
+      EscrevaL ("Insira o ano atual: ")
+      Leia (ano_atual)
+      idade <- (ano_atual - data_nasc)
+      EscrevaL ("Sua idade é: ",idade)
+               Se( idade >= 18) entao
+               EscrevaL ("Parabéns, você está apto a realizar sua CNH!!")
+               Senao entao
+               EscrevaL ("Você não possui idade para realuzar sua CNH, apenas a partir dos 18 anos!!")
+     FimSe
+fimalgoritmo
