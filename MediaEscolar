@@ -1,0 +1,16 @@
+algoritmo "Escola Gabriel Miranda"
+var  PrimeiraNota, SegundaNota, NotaFinal: Real
+inicio
+   EscrevaL("Digite a sua nota N1: ")
+   Leia (PrimeiraNota)
+   EscrevaL("Digite a sua nota N2: ")
+   Leia (SegundaNota)
+   NotaFinal <- (PrimeiraNota + SegundaNota) /2
+   EscrevaL ("A sua nota final é de : ",NotaFinal:5:1)
+            Se (NotaFinal >= 6) Entao
+               EscrevaL ("Parabéns, você foi aprovado!! ", NotaFinal)
+               SeNao
+               EscrevaL ("Lamento mas não atingiu a média!!", NotaFinal)
+               FimSe
+   
+   fimalgoritmo
